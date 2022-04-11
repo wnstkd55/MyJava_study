@@ -183,9 +183,6 @@ public class BankAccountUsingArray {
          	}
          }
       }
-       
-       
-       
        */
       
       for (int i = 0; i < accountArray.length; i++) {
