@@ -14,7 +14,7 @@ public class FileInputStream_2 {
 		//1. 입력 파일 생성
 		File inFile = new File("src\\Chap19\\EX04\\FileInputStream1.txt");
 		
-		//2. #1 byte단위 읽기 (한바이트씩 읽어서 처리)
+		//2. #1 byte단위 읽기 (한바이트씩 읽어서 처리) : 처리속도가 느리다
 		InputStream is1 = null; //객체 선언, finally블락에서 close
 		
 		try {
