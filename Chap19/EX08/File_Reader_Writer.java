@@ -9,12 +9,12 @@ import java.io.Writer;
 
 /*
  	Reader / Writer		: char 단위 입출력. 문자만 처리하도록 특화된 추상클래스
-		엔코딩의 신경을 덜 써도 된다.
+		인코딩의 신경을 덜 써도 된다.
  		//byte : 1byte
  		//char : 2byte, UTF-16 (유니코드)로 처리, 영문 2byte, 한글도 2byte, 고정길이, 전세계 모든 언어를 처리
  		
  		FileReader : charset지정옵션이 없다. default charset사용
- 		File 
+ 		FileWriter : charset지정옵션이 없다. default charset사용
  */
 
 public class File_Reader_Writer {

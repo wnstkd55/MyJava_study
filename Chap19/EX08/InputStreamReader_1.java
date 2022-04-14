@@ -1,8 +1,12 @@
 package Chap19.EX08;
 /*
+ * 
 	InputStreamReader : byte데이터를 char포맷으로 변환하는 객체		<<==인코딩을 지정할 수 있다.
 		byte포맷은 인코딩을 잘 지정해줘야된다.	<<== encoding 
 		char포맷으로 바꾸면 인코딩타입을 신경쓸 필요가 없다.
+		사용목적 1. FileReader : default charset만 사용 가능해서, 현재 Default charet MS949이지만 외부 파일이 UTF-8을 읽어올 경우
+		사용목적 2. 네트워크에서 전송되는 스트림이 UTF-8, MS949 byte ==> char 로 변환처리
+		
 */
 
 import java.io.File;
