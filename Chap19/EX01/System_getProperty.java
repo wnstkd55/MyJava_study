@@ -21,14 +21,6 @@ public class System_getProperty {
 		System.out.println(System.getProperty("path.separator"));    
 		System.out.println(System.getProperty("line.separator"));  
 		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 
 }

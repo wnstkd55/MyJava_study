@@ -24,28 +24,35 @@ public class EX06_ConsoleInputOutputObject {
 	public static void main(String[] args) throws IOException {
 		
 		InputStream is_input = System.in;
-		System.out.println("한글을 입력하세요>>>");
-		byte[] arr = new byte[100];
-		int count = is_input.read(arr);
+		System.out.println("한글을 입력해주세요 >>>");
 		
-		String str = new String(arr,0,count,Charset.defaultCharset());
+		byte[] arr = new byte[100];
+		int count1 = is_input.read(arr);
+		String str = new String(arr,0,count1,Charset.defaultCharset());
+		System.out.println(str);
 		is_input.close();
 		
-		File File = new File("src/Chap19/EX06/input.txt");
-		OutputStream os = new FileOutputStream(File);
+		File file = new File("src/Chap19/EX06/input.txt");
+		OutputStream os = new FileOutputStream(file);
 		os.write(str.getBytes());
 		os.flush();
 		os.close();
-		InputStream is = new FileInputStream(File);
+		
+		InputStream is = new FileInputStream(file);
 		int data;
-		while((data=is.read(arr))!= -1){
+		while((data=is.read(arr))!= -1) {
 			System.out.println(str);
 		}
 		is.close();
+		
 		OutputStream os_output = System.out;
 		os_output.write(arr);
 		os_output.flush();
 		os_output.close();
+		
+		
+		
+		
 	}
 
 }
